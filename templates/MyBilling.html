@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Billing</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'static/css/MyBilling.css' %}">
+
+</head>
+<body>
+<div class="MAIN">
+    <div class="Billing">
+        <form action="">
+            <legend>Billing</legend>
+            <hr>
+            <div class="One">
+                <input style="width: 240px" type="text" placeholder="First Name">
+                <input style="width: 240px" type="text" placeholder="Last Name"><br><br>
+            </div>
+            <div class="Two">
+                <input style="width: 100%" type="text" placeholder="Company Name"><br><br>
+                <input style="width: 100%" type="text" placeholder="Address"><br><br>
+                <input style="width: 100%" type="email" placeholder="Email"><br><br>
+                <input style="width: 100%" type="tel" placeholder="Phone"><br><br>
+            </div>
+            <textarea name="" id="" cols="59" rows="5" placeholder="Additional Information"></textarea><br><br>
+            <input type="checkbox"><span>Create an account?</span>
+        </form>
+    </div>
+    <br>
+    <div class="Summary">
+        <form action="">
+            <legend>Summary</legend>
+            <hr>
+            <p>Products <span style="padding-left: 90px">$53.98</span></p>
+            <p>Shopping <span style="padding-left: 90px">Gratis</span></p>
+            <hr>
+            <p><b>Total Amount <span style="padding-left: 50px">$53.98</span> <br> (including VAT)</b></p>
+            <input type="submit" value="Make A Purchase">
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
